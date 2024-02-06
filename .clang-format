@@ -2,7 +2,7 @@ BasedOnStyle: LLVM
 IndentWidth: 4
 UseTab: Never
 TabWidth: 4
-BreakBeforeBraces: Allman
+BreakBeforeBraces: Custom
 NamespaceIndentation: None
 AllowShortFunctionsOnASingleLine: None
 AllowShortIfStatementsOnASingleLine: false
@@ -29,14 +29,11 @@ SpacesInCStyleCastParentheses: false
 SpacesInParentheses: false
 SpacesInSquareBrackets: false
 AlignAfterOpenBracket: DontAlign
-AlignConsecutiveAssignments: false
-AlignConsecutiveDeclarations: false
 AlignEscapedNewlinesLeft: false
 AlignOperands: true
 AlignTrailingComments: true
 BreakAfterJavaFieldAnnotations: false
 BreakBeforeBinaryOperators: NonAssignment
-BreakBeforeBraces: Custom
 BraceWrapping:
   AfterClass: true
   AfterEnum: true
@@ -53,7 +50,6 @@ BraceWrapping:
 IndentPPDirectives: None
 ColumnLimit: 120
 AccessModifierOffset: -4
-
 ForEachMacros:
   - foreach
   - Q_FOREACH
