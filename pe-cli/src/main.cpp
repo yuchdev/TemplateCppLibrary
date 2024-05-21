@@ -36,7 +36,7 @@ void print_version()
     std::exit(EXIT_SUCCESS);
 }
 
-void actions(const CommandLineParams& cmd_line_params)
+void process_cli(const CommandLineParams& cmd_line_params)
 {
     if (cmd_line_params.is_help()){
         usage();
@@ -56,6 +56,6 @@ int main(int argc, char* argv[])
 {
     setlocale(0, "");
     get_params().read_params(argc, argv);
-    actions(get_params());
+    process_cli(get_params());
     return 0;
 }
